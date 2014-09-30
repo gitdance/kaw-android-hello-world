@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
     EditText mEditText;
-    Button mButton;
+    Button mnButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         mEditText = (EditText) findViewById(R.id.myFancyInput);
-        mButton = (Button) findViewById(R.id.myFancyButton);
+        mnButton = (Button) findViewById(R.id.myFancyButton);
 
-        mButton.setOnClickListener(new View.OnClickListener() {
+        mnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String textInput = mEditText.getText().toString();
